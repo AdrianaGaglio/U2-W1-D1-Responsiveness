@@ -211,8 +211,11 @@ table {
 
 /* X-Large - desktop */
 @media screen and (min-width: 1200px) {
-  body {
-    padding-inline: 7rem;
+  header,
+  main,
+  footer {
+    width: 1000px;
+    margin-inline: auto;
   }
 
   header {
