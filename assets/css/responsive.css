@@ -1,0 +1,330 @@
+/* BREAKPOINT STANDARD */
+
+/*
+        - 0 ~ 575px         => MOBILE
+        - 576px ~ 767px     => SMALL (tablet)
+        - 768px ~ 991px     => MEDIUM (tablet horizontal)
+        - 992px ~ 1199px    => LARGE (small laptop)
+        - 1200px ~ 1399px   => X-LARGE (desktop)
+        - 1400px ~ infinite => XX-Large (big desktop)
+
+*/
+
+/* logo html5 */
+.img-container img {
+  width: 40px;
+}
+
+.img-container {
+  border: 2.5px solid #a02571;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.img-container > div {
+  border: 2.5px solid #019dc3;
+}
+
+.img-container img {
+  margin-top: 3px;
+  margin-bottom: -3px;
+}
+
+table {
+  width: 80%;
+}
+
+@media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    padding: 10px;
+  }
+
+  /* header */
+  header div img {
+    width: 130px;
+    margin-bottom: 0px;
+  }
+
+  header,
+  header a {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  header li {
+    display: inline-block;
+    margin-inline: 0.35rem;
+  }
+
+  /* titolo della pagina */
+  h1 {
+    line-height: 3rem;
+  }
+
+  /* testi */
+  main {
+    font-size: 1rem;
+  }
+
+  main ul li {
+    line-height: 1.7rem;
+  }
+
+  iframe {
+    height: 100px;
+  }
+
+  main ul {
+    margin-left: 30px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    font-weight: 300;
+  }
+
+  section h2 {
+    text-transform: none;
+    background-color: #a3a3a3;
+    font-size: 1.3rem;
+  }
+
+  form {
+    width: 70%;
+  }
+
+  form input,
+  form button {
+    display: inline-block;
+    font-size: 1rem;
+  }
+
+  form input {
+    width: 68%;
+  }
+
+  form button {
+    width: 30%;
+    max-width: 60px;
+  }
+}
+
+/* SMALL - tablet */
+@media screen and (min-width: 576px) {
+  main {
+    font-size: 1.3rem;
+  }
+
+  main ul li {
+    line-height: 2rem;
+  }
+
+  table {
+    width: 70%;
+    margin-inline: auto;
+    margin-block: 5rem;
+  }
+
+  section h2 {
+    text-transform: none;
+    background-color: #a3a3a3;
+  }
+}
+
+/* MEDIUM - tablet horizontal */
+@media screen and (min-width: 768px) {
+  header p,
+  header a {
+    font-weight: 500;
+  }
+
+  header li {
+    display: inline-block;
+    margin-inline: 0.35rem;
+  }
+
+  /* header */
+  header div img {
+    width: 170px;
+  }
+
+  /* titolo della pagina */
+  h1 {
+    font-size: 6rem;
+    line-height: 6.5rem;
+    margin-bottom: 2rem;
+  }
+
+  /* testi */
+  main {
+    font-size: 2rem;
+  }
+
+  main ul {
+    margin-left: 40px;
+  }
+
+  main ul li {
+    line-height: 3rem;
+  }
+
+  h2 {
+    font-weight: 600;
+  }
+
+  table {
+    margin-block: 8rem;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  form input,
+  form button {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding-block: 1rem;
+  }
+
+  form input {
+    width: 79%;
+    padding-left: 1rem;
+  }
+
+  form button {
+    width: 20%;
+  }
+
+  address {
+    font-size: 2rem;
+  }
+}
+
+/* LARGE - laptop */
+@media screen and (min-width: 992px) {
+}
+
+/* X-Large - desktop */
+@media screen and (min-width: 1200px) {
+  body {
+    padding-inline: 7rem;
+  }
+
+  header {
+    text-align: left;
+    padding: 1rem 4rem;
+  }
+
+  header p,
+  header a {
+    font-weight: 600;
+  }
+
+  header div,
+  header nav,
+  header p,
+  header img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -4px;
+  }
+
+  header > div > img {
+    width: 30%;
+    margin-bottom: 0px;
+    margin-right: 2.5rem;
+  }
+
+  header > div > p {
+    width: 50%;
+    margin-bottom: 0px;
+  }
+
+  header > div {
+    width: 50%;
+  }
+
+  header nav {
+    text-align: right;
+    width: 50%;
+  }
+
+  h1 {
+    margin-bottom: 4rem;
+  }
+
+  /* logo html5 */
+  .img-container img {
+    width: 70px;
+  }
+
+  .img-container {
+    border: 4px solid #a02571;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+
+  .img-container > div {
+    border: 4px solid #019dc3;
+  }
+
+  .img-container img {
+    margin-top: 3px;
+    margin-bottom: -3px;
+  }
+
+  main {
+    font-size: 1.7rem;
+    padding-inline: 2.2rem;
+  }
+
+  main li {
+    line-height: 2.5rem;
+  }
+
+  section {
+    border-radius: 20px;
+  }
+
+  section,
+  iframe {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    margin-left: -4px;
+    height: 193px;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  input,
+  button {
+    margin-left: -2px;
+  }
+  input {
+    width: 67%;
+  }
+
+  button {
+    width: 30%;
+  }
+
+  aside > div {
+    display: inline-block;
+    margin-left: -4px;
+    width: 33.33%;
+  }
+
+  address {
+    font-size: 1.6rem;
+    width: 60%;
+    margin-inline: auto;
+  }
+}
