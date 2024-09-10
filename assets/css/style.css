@@ -6,9 +6,9 @@ body {
   font-family: Poppins, "Helvetica Neue", sans-serif;
   font-size: 1.4rem;
   line-height: 1.5;
-  padding: 15px;
+  padding: 12px;
   background-image: url("../img/sfondo.png");
-  background-position: center center;
+  background-size: 100%;
 }
 * {
   box-sizing: border-box;
@@ -27,20 +27,30 @@ header {
   color: white;
   box-shadow: 0 3px 3px #444;
   margin-bottom: 1.5em;
-  padding: 2em 1.5em;
+  padding: 1.2em 1.5em;
 }
 header div img {
-  margin-bottom: 20px;
+  width: 135px;
 }
+
+header div p {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
 header nav ul {
   margin: 0;
 }
 header nav li {
   list-style: none;
+  display: inline-block;
 }
 header nav li a {
   color: white;
   text-decoration: none;
+  font-weight: 500;
+  margin-inline: 0.3rem;
+  font-size: 1.2rem;
 }
 header nav li a:hover {
   color: red;
@@ -53,7 +63,7 @@ header nav li a::before {
 main {
   background-color: #fff;
   box-shadow: 0 3px 3px #444;
-  padding: 2em 1em;
+  padding: 2em 0.7em;
   margin-bottom: 1.5em;
 }
 section {
@@ -64,9 +74,9 @@ section {
 section h2 {
   text-align: center;
   color: #333;
-  font-size: 2rem;
+  background-color: #a3a3a3;
+  font-size: 1.5rem;
   font-weight: bold;
-  text-transform: uppercase;
   margin-bottom: 1em;
 }
 
@@ -74,9 +84,10 @@ section h2 {
 h1 {
   font-size: 2.6rem;
   font-weight: bold;
-  letter-spacing: -0.03em;
   margin-bottom: 0.7em;
+  line-height: 3.2rem;
 }
+
 p,
 address,
 ul,
@@ -85,17 +96,47 @@ dl,
 blockquote {
   margin-bottom: 1.2em;
 }
+
 h1 + p {
   color: #a0a0a0;
+  font-size: 1rem;
 }
+
+.img-container {
+  border: 2.5px solid #a02571;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.img-container > div {
+  border: 2.5px solid #00a0c6;
+}
+
+.img-container img {
+  margin-top: 3px;
+  margin-bottom: -3px;
+  width: 50px;
+}
+
+main p,
+main li {
+  font-size: 1rem;
+}
+
+main li {
+  line-height: 1.6rem;
+}
+
 ul,
 ol {
   margin-left: 2em;
 }
+
 a {
   color: #00a0c6;
   font-weight: bold;
 }
+
 strong {
   color: #a02571;
   font-weight: bold;
@@ -105,16 +146,18 @@ code {
   border: 1px solid #969494;
   border-radius: 5px;
 }
+
 iframe {
   width: 100%;
   height: auto;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
   border-radius: 20px;
 }
 
 /* TABELLE */
 table {
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
+  width: 80%;
 }
 caption {
   font-weight: bold;
@@ -126,7 +169,8 @@ thead tr {
 }
 th,
 td {
-  padding: 12px 15px;
+  font-size: 1rem;
+  padding: 8px;
   vertical-align: bottom;
   text-align: center;
 }
@@ -143,17 +187,33 @@ tbody tr:last-of-type {
 }
 
 /* FORM */
+
+form {
+  width: 70%;
+}
+
+input,
+button {
+  margin-left: -2px;
+}
+
 input {
+  width: 73%;
+  font-size: 1rem;
   padding: 5px;
   border: 0;
   border-bottom: 1px dashed #333;
 }
+
 button {
-  padding: 4px 7px;
+  width: 27%;
+  padding: 4px;
   background-color: #3f6bca;
   border: 0;
   color: white;
   font-weight: bold;
+  font-size: 1rem;
+  max-width: 60px;
 }
 
 /* ELEMENTI NELL' ASIDE */
@@ -189,4 +249,82 @@ footer {
 }
 footer a {
   color: fuchsia;
+}
+
+@media screen and (min-width: 768px) {
+  header a,
+  header p {
+    font-weight: 600;
+  }
+
+  main {
+    padding-inline: 2rem;
+  }
+
+  h1 {
+    font-size: 5.5rem;
+    line-height: 6rem;
+  }
+
+  h1 + p {
+    font-size: 2rem;
+  }
+
+  .img-container img {
+    width: 40px;
+  }
+
+  main p,
+  main li,
+  address {
+    font-size: 2rem;
+  }
+
+  main li {
+    line-height: 3rem;
+  }
+
+  main h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+
+  table {
+    margin-inline: auto;
+    margin-block: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    text-align: left;
+  }
+
+  header > div,
+  header > div > img,
+  header > div > p,
+  header > nav {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  header > div > p {
+    margin-bottom: 0;
+    margin-left: 2rem;
+  }
+
+  header > div > p,
+  header nav li a {
+    font-size: 1.5rem;
+  }
+
+  header > div,
+  header > nav {
+    width: 50%;
+    margin-left: -4px;
+  }
+
+  header > nav {
+    text-align: right;
+  }
 }
