@@ -327,4 +327,64 @@ footer a {
   header > nav {
     text-align: right;
   }
+
+  main, header, footer {
+    width:1000px;
+    margin-inline:auto;
+  }
+
+  .img-container, .img-container > div {
+    border-width: 4px;
+  }
+
+  .img-container img {
+    width: 74px;
+    border-
+  }
+
+  main p, main li {
+    font-size:1.7rem;
+  }
+
+  th, td {
+    font-size:1.7rem;
+  }
+
+  iframe, section {
+    display:inline-block;
+    margin-left:-4px;
+    width:50%;
+    vertical-align:middle;
+    height:180px;
+    border-radius:20px;
+  }
+
+  form {
+    width:95%;
+  }
+
+  input, button {
+    font-size:1.5rem;
+  }
+
+  input, button {
+    padding:7px 15px;
+  }
+
+  button {
+    max-width: initial;
+    }
+
+    aside > div {
+      width:33.33%;
+      display:inline-block;
+      margin-left:-3px;
+      vertical-align:middle;
+    }
+
+    address {
+      font-size:1.5rem;
+      width:65%;
+      margin-inline:auto;
+    }
 }
